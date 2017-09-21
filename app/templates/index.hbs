@@ -1,0 +1,16 @@
+
+<p class="well">We hope you find exactly what you're looking for in a place to stay.</p>
+
+
+<ul class="well">
+	{{#each model as |rental|}}
+		{{rental-tile rental=rental}}
+	{{/each}}
+</ul>
+
+<div class="well">{{new-rental saveRental2="saveRental3"}}</div>
+
+<div class="well">{{#link-to 'about'}}About Us{{/link-to}} <br />
+{{#link-to 'contacts'}}Click here to contact us.{{/link-to}}</div>
+
+

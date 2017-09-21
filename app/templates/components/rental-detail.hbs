@@ -1,0 +1,6 @@
+Located in {{rental.city}}, this {{rental.bedrooms}} bedrooom {{rental.type}} is available by arrangement through {{rental.owner}}.
+<br />
+<p><img src={{rental.image}} alt={{rental.type}} width="500px" height="400px"></p>
+
+{{update-rental rental=rental update="update"}}
+<button {{action 'delete' rental}}>Delete</button>

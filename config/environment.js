@@ -18,6 +18,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey:  "AIzaSyDNR5Fyf7-ogqRser_71MtUv0di4LPo0dU",
+      authDomain: "super-rentals-ember-moringa.firebaseapp.com",
+      databaseURL: "https://super-rentals-ember-moringa.firebaseio.com",
+      storageBucket: "",
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

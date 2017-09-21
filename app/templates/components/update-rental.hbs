@@ -1,0 +1,73 @@
+{{#if updateRentalForm}}
+	<h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+	<div>
+		<form>
+			<div class="form-group">
+				<label for="owner">Owner</label>
+				{{input value=owner id="owner" placeholder=rental.owner}}
+			</div>
+
+			<div class="form-group">
+				<label for="type">Type</label>
+				{{input value=type id="type" placeholder=rental.type}}
+			</div>
+
+			<div class="form-group">
+				<label for="city">City</label>
+				{{input value=city id="city" placeholder=rental.city}}
+			</div>
+
+			<div class="form-group">
+				<label for="bedrooms">Number of Bedrooms</label>
+				{{input value=bedrooms id="bedrooms" placeholder=rental.bedrooms}}
+			</div>
+
+			<div class="form-group">
+				<label for="image">Image URL</label>
+				{{input value=image id="image" placeholder=rental.image}}
+			</div>
+
+			<button {{action 'update' rental}}>Save</button>
+		</form>
+	</div>
+{{else}}
+	<button {{action 'updateRentalForm'}}>Update</button>
+{{/if}}
+
+{{!--
+{{#if updateRentalForm}}
+  <h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="owner">Owner</label>
+        {{input value=owner id="owner" placeholder=rental.owner}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        {{input value=type id="type" placeholder=rental.type}}
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        {{input value=city id="city" placeholder=rental.city}}
+      </div>
+
+      <div class="form-group">
+        <label for="bedrooms">Number of Bedrooms</label>
+        {{input value=bedrooms id="bedrooms" placeholder=rental.bedrooms}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=rental.image}}
+      </div>
+
+      <button {{action 'update' rental}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateRentalForm'}}>Update</button>
+{{/if}}
+--}}
