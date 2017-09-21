@@ -3,14 +3,24 @@
 
 
 <ul class="well">
-	{{#each model as |rental|}}
+	{{#each model.rentals as |rental|}}
 		{{rental-tile rental=rental}}
 	{{/each}}
 </ul>
 
 <div class="well">{{new-rental saveRental2="saveRental3"}}</div>
 
+<div class="well">
+	<h2>All Reviews</h2>
+	<ul>
+		{{#each model.reviews as |review|}}
+			<li>{{review.rating}} - {{review.content}} - {{review.author}}</li>
+		{{/each}}
+	</ul>
+</div>
+
+<div class="well">{{new-review saveReview="saveReview"}}</div>
+
+
 <div class="well">{{#link-to 'about'}}About Us{{/link-to}} <br />
 {{#link-to 'contacts'}}Click here to contact us.{{/link-to}}</div>
-
-
